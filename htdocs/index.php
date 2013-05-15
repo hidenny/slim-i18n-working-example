@@ -26,7 +26,7 @@ $twig->addExtension(new Twig_Extensions_Extension_I18n());
 
 $app      = new \Slim\Slim(array(
     'templates.path'     => '../templates',
-    //'locales.path'       => '../locale', // no effect 
+    //'locales.path'       => '../locale', // no effect [bindtextdomain set the path]
     'debug'              => true,
     'view'               => new \Slim\Extras\Views\Twig(),
     'cookies.secret_key' => md5('appsecretkey'),
@@ -80,7 +80,7 @@ setlocale(LC_ALL, 'de_DE.UTF-8');
  * that as well. The second parameter is the base directory to start
  * searching in.
  */
-bindtextdomain('messages', 'locale');
+bindtextdomain('messages', '../locale');
 
 /**
  * Tell the application to use this text domain, or messages.mo.
