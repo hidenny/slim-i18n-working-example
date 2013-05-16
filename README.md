@@ -8,8 +8,9 @@ there difference with working with gettext in apache under windows
 this example use Slim framework plus Twig template engine
 
 index.twig
+``` html
 {% trans %}Hello, {{ name }}, it is nice to see you today!{% endtrans %}
-
+```
 
 
 
