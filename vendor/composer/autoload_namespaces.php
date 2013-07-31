@@ -7,7 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Twig_Extensions_' => array($vendorDir . '/slim/extras/Views/Extension', $vendorDir . '/twig/extensions/lib'),
-    'Twig_' => $vendorDir . '/twig/twig/lib',
-    'Slim\\Extras' => $vendorDir . '/slim/extras',
-    'Slim' => $vendorDir . '/slim/slim',
+    'Twig_' => array($vendorDir . '/twig/twig/lib'),
+    'Slim\\Views' => array($vendorDir . '/slim/views'),
+    'Slim\\Extras' => array($vendorDir . '/slim/extras'),
+    'Slim' => array($vendorDir . '/slim/slim'),
 );

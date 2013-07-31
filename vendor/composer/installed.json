@@ -1,50 +1,5 @@
 [
     {
-        "name": "slim/slim",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/codeguy/Slim.git",
-            "reference": "2.2.0"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/codeguy/Slim/zipball/2.2.0",
-            "reference": "2.2.0",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2012-12-13 02:15:50",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Slim": "."
-            }
-        },
-        "notification-url": "http://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Josh Lockhart",
-                "email": "info@joshlockhart.com",
-                "homepage": "http://www.joshlockhart.com/"
-            }
-        ],
-        "description": "Slim Framework, a PHP micro framework",
-        "homepage": "http://github.com/codeguy/Slim",
-        "keywords": [
-            "microframework",
-            "rest",
-            "router"
-        ]
-    },
-    {
         "name": "slim/extras",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -73,7 +28,7 @@
                 "Slim\\Extras": "."
             }
         },
-        "notification-url": "http://packagist.org/downloads/",
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
         ],
@@ -81,7 +36,7 @@
             {
                 "name": "Andrew Smith",
                 "email": "a.smith@silentworks.co.uk",
-                "homepage": "http://www.silentworks.co.uk/"
+                "homepage": "http://thoughts.silentworks.co.uk/"
             },
             {
                 "name": "Josh Lockhart",
@@ -104,18 +59,18 @@
         "source": {
             "type": "git",
             "url": "https://github.com/fabpot/Twig.git",
-            "reference": "7b298c2d1fa32b2d3ddb7e3b6b3deb56b16b3527"
+            "reference": "0e63ef04a00fb238ee457708f8b4e8918aa51d7e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/fabpot/Twig/zipball/7b298c2d1fa32b2d3ddb7e3b6b3deb56b16b3527",
-            "reference": "7b298c2d1fa32b2d3ddb7e3b6b3deb56b16b3527",
+            "url": "https://api.github.com/repos/fabpot/Twig/zipball/0e63ef04a00fb238ee457708f8b4e8918aa51d7e",
+            "reference": "0e63ef04a00fb238ee457708f8b4e8918aa51d7e",
             "shasum": ""
         },
         "require": {
             "php": ">=5.2.4"
         },
-        "time": "2013-05-14 05:05:22",
+        "time": "2013-07-24 03:16:45",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -128,9 +83,9 @@
                 "Twig_": "lib/"
             }
         },
-        "notification-url": "http://packagist.org/downloads/",
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "BSD-3"
+            "BSD-3-Clause"
         ],
         "authors": [
             {
@@ -155,18 +110,18 @@
         "source": {
             "type": "git",
             "url": "https://github.com/fabpot/Twig-extensions.git",
-            "reference": "v1.0.0"
+            "reference": "f5b0c84f3699e494c84ee627d7d583e115d2c4a2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/fabpot/Twig-extensions/zipball/v1.0.0",
-            "reference": "v1.0.0",
+            "url": "https://api.github.com/repos/fabpot/Twig-extensions/zipball/f5b0c84f3699e494c84ee627d7d583e115d2c4a2",
+            "reference": "f5b0c84f3699e494c84ee627d7d583e115d2c4a2",
             "shasum": ""
         },
         "require": {
-            "twig/twig": "1.*"
+            "twig/twig": "~1.0"
         },
-        "time": "2013-02-28 14:21:30",
+        "time": "2013-07-02 11:21:55",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -179,7 +134,7 @@
                 "Twig_Extensions_": "lib/"
             }
         },
-        "notification-url": "http://packagist.org/downloads/",
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
         ],
@@ -195,6 +150,104 @@
             "debug",
             "i18n",
             "text"
+        ]
+    },
+    {
+        "name": "slim/views",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Slim/Views",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim-Views.git",
+            "reference": "aa664267cd42cb1560a716d109b5f972ca24a4a3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/codeguy/Slim-Views/zipball/aa664267cd42cb1560a716d109b5f972ca24a4a3",
+            "reference": "aa664267cd42cb1560a716d109b5f972ca24a4a3",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "slim/slim": ">=2.2.0"
+        },
+        "time": "2013-07-10 08:21:46",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Slim\\Views": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andrew Smith",
+                "email": "a.smith@silentworks.co.uk",
+                "homepage": "http://thoughts.silentworks.co.uk/"
+            },
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "Smarty and Twig View Parser package for the Slim Framework",
+        "homepage": "http://github.com/codeguy/Slim-Views",
+        "keywords": [
+            "extensions",
+            "slimphp",
+            "templating"
+        ]
+    },
+    {
+        "name": "slim/slim",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim.git",
+            "reference": "2.3.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/codeguy/Slim/zipball/2.3.1",
+            "reference": "2.3.1",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mcrypt": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2013-07-20 18:38:05",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Slim": "."
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "Slim Framework, a PHP micro framework",
+        "homepage": "http://github.com/codeguy/Slim",
+        "keywords": [
+            "microframework",
+            "rest",
+            "router"
         ]
     }
 ]

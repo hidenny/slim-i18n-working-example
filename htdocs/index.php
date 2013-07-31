@@ -15,7 +15,7 @@ $twig   = new Twig_Environment($loader, array(
         // 'cache' => 'cache',
         ));
 \Slim\Extras\Views\Twig::$twigOptions = array(
-    "debug" => true
+    'debug' => true
 );
 $twig->addExtension(new Twig_Extensions_Extension_I18n());
 
@@ -24,11 +24,10 @@ $twig->addExtension(new Twig_Extensions_Extension_I18n());
     'Twig_Extensions_Extension_I18n'
 );
 
-$app      = new \Slim\Slim(array(
+$app                    = new \Slim\Slim(array(
     'templates.path'     => '../templates',
-    //'locales.path'       => '../locale', // no effect [bindtextdomain set the path]
     'debug'              => true,
-    'view'               => new \Slim\Extras\Views\Twig(),
+    'view'               => new \Slim\Views\Twig(),
     'cookies.secret_key' => md5('appsecretkey'),
     'log.enabled'        => TRUE,
     'log.writer'         => new \Slim\Extras\Log\DateTimeFileWriter(array(
@@ -37,7 +36,11 @@ $app      = new \Slim\Slim(array(
         'message_format' => '%label% - %date% - %message%'
             ))
         ));
-$locality = 'de_DE.UTF-8'; // locality should be determined here
+$app->view()->parserExtensions = array(
+    'Twig_Extension_Debug',
+    'Twig_Extensions_Extension_I18n'
+);
+$locality               = 'de_DE.UTF-8'; // locality should be determined here
 if (defined('LC_MESSAGES'))
 {
     /**
@@ -84,8 +87,10 @@ bindtextdomain('messages', '../locale');
  */
 textdomain('messages');
 
-$app->get('/', function () use ($app)
+$app->get('/',
+          function () use ($app)
         {
-            $app->render('index.twig', array('name' => 'Vic'));
+            $app->view()->setData(array('name' => 'Vic'));
+            $app->render('index.twig');
         });
 $app->run();
