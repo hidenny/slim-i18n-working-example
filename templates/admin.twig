@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js lt-ie9 lt-ie8 lt-ie7">   <![endif]-->
+<!--[if IE 7]>          <html class="no-js lt-ie9 lt-ie8">          <![endif]-->
+<!--[if IE 8]>          <html class="no-js lt-ie9">                 <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js">                        <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dashboard</title>
+        <meta name="description" content="Metis: Bootstrap Responsive Admin Theme">
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
+        <link type="text/css" rel="stylesheet" href="assets/Font-awesome/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+        <link type="text/css" rel="stylesheet" href="assets/css/calendar.css">
+
+        <link rel="stylesheet" href="assets/css/theme.css">
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <!--[if IE 7]>
+        <link type="text/css" rel="stylesheet" href="assets/Font-awesome/css/font-awesome-ie7.min.css"/>
+        <![endif]-->
+
+        <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!-- BEGIN WRAP -->
+        <div id="wrap">
+
+        <!-- .topnav -->
+        {# include '/snippets/topnav.twig' #}
+
+        <!-- BEGIN HEADER.head -->
+            <header class="head">
+                
+                <!-- ."main-bar -->
+                <div class="main-bar">
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h3><i class="icon-home"></i> Dashboard</h3>
+                            </div>
+                        </div>
+                        <!-- /.row-fluid -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </div>
+                <!-- /.main-bar -->
+            </header>
+            <!-- END HEADER.head -->
+
+            <!-- BEGIN LEFT  -->
+            <div id="left">
+               
+
+               {#{% include 'snippets/navigation.twig' %}#}
+
+            </div>
+            <!-- END LEFT -->
+
+            <!-- BEGIN MAIN CONTENT -->
+            <div id="content">
+                <!-- .outer -->
+                <div class="container-fluid outer">
+                    <div class="row-fluid">
+                        <!-- .inner -->
+                        <div class="span12 inner">
+                        {#    {% include 'snippets/icons_bar.twig' %}
+                            <hr>
+                             {% include 'snippets/quik_bar.twig' %}
+                            <hr> 
+                             {% include 'snippets/line_chart.twig' %}
+                            <hr>#}
+                            
+                        {% include 'snippets/table_dynamic.twig' %}
+                        </div>
+                        <!-- /.inner -->
+                    </div>
+                    <!-- /.row-fluid -->
+                </div>
+                <!-- /.outer -->
+            </div>
+            <!-- END CONTENT -->
+
+
+            <!-- #push do not remove -->
+            <div id="push"></div>
+            <!-- /#push -->
+        </div>
+        <!-- END WRAP -->
+
+        <div class="clearfix"></div>
+
+        <!-- BEGIN FOOTER -->
+        {% include '/snippets/footer.twig' %}
+        <!-- END FOOTER -->
+
+        <!-- #helpModal -->
+       {% include '/snippets/helpmodal.twig' %}
+        <!-- /#helpModal -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script>window.jQuery.ui || document.write('<script src="assets/js/vendor/jquery-ui-1.10.0.custom.min.js"><\/script>')</script>
+
+
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+        <script src="assets/js/lib/jquery.tablesorter.min.js"></script>
+
+        <script src="assets/js/lib/jquery.mousewheel.js"></script>
+        <script src="assets/js/lib/jquery.sparkline.min.js"></script>
+
+        <script src="assets/flot/jquery.flot.js"></script>
+        <script src="assets/flot/jquery.flot.pie.js"></script>
+        <script src="assets/flot/jquery.flot.selection.js"></script>
+        <script src="assets/flot/jquery.flot.resize.js"></script>
+
+        <script src="assets/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
+        
+        <script src="assets/js/main.js"></script>
+        
+
+        <script type="text/javascript">
+            $(function() {
+                dashboard();
+            });
+        </script>
+
+        {#<script type="text/javascript" src="assets/js/style-switcher.js"></script>#}
+
+    </body>
+</html>

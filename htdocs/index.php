@@ -24,7 +24,7 @@ $twig->addExtension(new Twig_Extensions_Extension_I18n());
     'Twig_Extensions_Extension_I18n'
 );
 
-$app                    = new \Slim\Slim(array(
+$app                           = new \Slim\Slim(array(
     'templates.path'     => '../templates',
     'debug'              => true,
     'view'               => new \Slim\Views\Twig(),
@@ -40,7 +40,7 @@ $app->view()->parserExtensions = array(
     'Twig_Extension_Debug',
     'Twig_Extensions_Extension_I18n'
 );
-$locality               = 'de_DE.UTF-8'; // locality should be determined here
+$locality                      = 'de_DE.UTF-8'; // locality should be determined here
 if (defined('LC_MESSAGES'))
 {
     /**
@@ -87,10 +87,17 @@ bindtextdomain('messages', '../locale');
  */
 textdomain('messages');
 
-$app->get('/',
-          function () use ($app)
+$app->get('/', function () use ($app)
         {
             $app->view()->setData(array('name' => 'Vic'));
             $app->render('index.twig');
         });
+
+$app->get('/admin',
+          function () use ($app)
+        {
+            $app->view()->setData(array('name' => 'Vic'));
+            $app->render('admin.twig');
+        });
+        
 $app->run();
