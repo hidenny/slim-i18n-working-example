@@ -3,8 +3,43 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "60a5ffb0568c1f4ba6f1b4735717052c",
+    "hash": "372fa054c00f5f5aaf992b9c66e90ca5",
     "packages": [
+        {
+            "name": "php-activerecord/php-activerecord",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kla/php-activerecord.git",
+                "reference": "0100b0de53e91b1ac3951bdea050cfa18b587ba2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kla/php-activerecord/zipball/0100b0de53e91b1ac3951bdea050cfa18b587ba2",
+                "reference": "0100b0de53e91b1ac3951bdea050cfa18b587ba2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "ActiveRecord.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "php-activerecord is an open source ORM library based on the ActiveRecord pattern.",
+            "homepage": "http://www.phpactiverecord.org/",
+            "keywords": [
+                "activerecord",
+                "orm"
+            ],
+            "time": "2013-05-07 20:57:49"
+        },
         {
             "name": "slim/extras",
             "version": "dev-master",
@@ -203,12 +238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "0e63ef04a00fb238ee457708f8b4e8918aa51d7e"
+                "reference": "7c1ce36f87ab1dd1dea007749325b8e120208be6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/0e63ef04a00fb238ee457708f8b4e8918aa51d7e",
-                "reference": "0e63ef04a00fb238ee457708f8b4e8918aa51d7e",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/7c1ce36f87ab1dd1dea007749325b8e120208be6",
+                "reference": "7c1ce36f87ab1dd1dea007749325b8e120208be6",
                 "shasum": ""
             },
             "require": {
@@ -217,7 +252,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.13-dev"
+                    "dev-master": "1.14-dev"
                 }
             },
             "autoload": {
@@ -244,7 +279,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-07-24 03:16:45"
+            "time": "2013-08-05 08:15:36"
         }
     ],
     "packages-dev": [
@@ -259,7 +294,8 @@
         "slim/extras": 20,
         "slim/views": 20,
         "twig/twig": 20,
-        "twig/extensions": 20
+        "twig/extensions": 20,
+        "php-activerecord/php-activerecord": 20
     },
     "platform": [
 

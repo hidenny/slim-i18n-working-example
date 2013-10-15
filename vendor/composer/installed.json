@@ -59,22 +59,22 @@
         "source": {
             "type": "git",
             "url": "https://github.com/fabpot/Twig.git",
-            "reference": "0e63ef04a00fb238ee457708f8b4e8918aa51d7e"
+            "reference": "7c1ce36f87ab1dd1dea007749325b8e120208be6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/fabpot/Twig/zipball/0e63ef04a00fb238ee457708f8b4e8918aa51d7e",
-            "reference": "0e63ef04a00fb238ee457708f8b4e8918aa51d7e",
+            "url": "https://api.github.com/repos/fabpot/Twig/zipball/7c1ce36f87ab1dd1dea007749325b8e120208be6",
+            "reference": "7c1ce36f87ab1dd1dea007749325b8e120208be6",
             "shasum": ""
         },
         "require": {
             "php": ">=5.2.4"
         },
-        "time": "2013-07-24 03:16:45",
+        "time": "2013-08-05 08:15:36",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.13-dev"
+                "dev-master": "1.14-dev"
             }
         },
         "installation-source": "source",
@@ -248,6 +248,43 @@
             "microframework",
             "rest",
             "router"
+        ]
+    },
+    {
+        "name": "php-activerecord/php-activerecord",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kla/php-activerecord.git",
+            "reference": "0100b0de53e91b1ac3951bdea050cfa18b587ba2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kla/php-activerecord/zipball/0100b0de53e91b1ac3951bdea050cfa18b587ba2",
+            "reference": "0100b0de53e91b1ac3951bdea050cfa18b587ba2",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2013-05-07 20:57:49",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "ActiveRecord.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "php-activerecord is an open source ORM library based on the ActiveRecord pattern.",
+        "homepage": "http://www.phpactiverecord.org/",
+        "keywords": [
+            "activerecord",
+            "orm"
         ]
     }
 ]
