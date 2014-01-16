@@ -11,9 +11,7 @@ require '../vendor/autoload.php';
 
 
 $loader = new Twig_Loader_Filesystem('../templates');
-$twig   = new Twig_Environment($loader, array(
-        // 'cache' => 'cache',
-        ));
+$twig   = new Twig_Environment($loader);
 \Slim\Extras\Views\Twig::$twigOptions = array(
     'debug' => true
 );
@@ -100,4 +98,9 @@ $app->get('/admin',
             $app->render('admin.twig');
         });
         
+$app->get('/test-active-record', function() use ($app)
+        {
+
+        });
+
 $app->run();
